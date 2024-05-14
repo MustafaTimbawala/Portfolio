@@ -1,0 +1,19 @@
+.courseCard{ 
+    color: #CB997E;
+    padding: 5px;
+    margin: 10px;
+} 
+
+.courseCard h3{ 
+    color:  #FFBF69;
+}
+
+.coursebox{ 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.title{ 
+    color: #FF9F1C;
+}

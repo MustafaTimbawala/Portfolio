@@ -1,0 +1,83 @@
+
+
+.greeting { 
+ color: #CB997E;
+ 
+} 
+.identification{ 
+  color: #FF9F1C;
+}
+
+.subtitle{ 
+  color: #FF9F1C;
+}
+.start{ 
+  display: flex;
+  flex-direction: column;
+  align-items:center;
+  justify-content: space-between;
+ 
+} 
+
+.introduction{ 
+  color: #CB997E;
+  width: 50vw;
+
+}
+
+
+.skills{ 
+  display: flex;
+  flex-direction: row;
+  justify-content: center ;
+  align-items: center;
+}
+
+@media screen and (max-width: 600px){
+  .skills{ 
+    display: flex;
+    flex-direction: column;
+    justify-content: center ;
+    align-items: center;
+  }
+}
+.skills h3{ 
+  color:#FF9F1C ;
+  padding-right: 1cm;
+}
+
+.skills p{ 
+  color: #FF9F1C; 
+
+  width: max-content;
+}
+.skillContainer{
+  display: flex; 
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.skillWord{ 
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: normal;
+  width: 115%;
+}
+
+.projectSec{ 
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center; 
+  padding-bottom: 5%;
+}
+
+.projectBin{ 
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center; 
+  width: 50vw;
+  
+}
