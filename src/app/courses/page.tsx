@@ -42,16 +42,12 @@ export default  async function coursePage(){
 
     return(
         <div>
-            
             <h1 className={styles.title}>Here are the my completed courses:</h1> 
-
             <div > 
                 {courses?.map((course : any)=>{ 
                     return <CourseBox key={course.id} course={course}/>;
                 })}
-                
             </div>
-        
         </div>
         //A summary of all the skills from the course 
         // A selection of filter buttons that if you click will show courses that you learn those skills 

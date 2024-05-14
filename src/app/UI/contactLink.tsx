@@ -1,6 +1,6 @@
 
 import styles from "@/app/UI/ui.module.css" 
-import { FaGithub} from 'react-icons/fa';
+import { FaGithub } from "react-icons/fa";
 import { CiLinkedin } from "react-icons/ci";
 import { CgMail } from "react-icons/cg";
 
