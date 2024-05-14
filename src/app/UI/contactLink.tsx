@@ -1,7 +1,7 @@
 
 import styles from "@/app/UI/ui.module.css" 
 import { FaGithub} from 'react-icons/fa';
-import { SiIndeed } from 'react-icons/si'; 
+import { CiLinkedin } from "react-icons/ci";
 import { CgMail } from "react-icons/cg";
 
 
@@ -13,7 +13,7 @@ export default function SocialLinks() {
             <CgMail size={30} color="#FF9F1C" />
         </a>
         <a href="https://www.linkedin.com/in/mustafa-timbawala" target="_blank" rel="noopener noreferrer">
-            <SiIndeed size={30} color="#FF9F1C" />
+            <CiLinkedin size={30} color="#FF9F1C" />
         </a>
         <a href="https://github.com/MustafaTimbawala" target="_blank" rel="noopener noreferrer">
             <FaGithub size={30} color="#FF9F1C" />

@@ -49,7 +49,6 @@ export default function Home() {
         </div>  
         <div className={styles.projectBin}> 
           <ProjectCard project={B58project} />
-          <line></line>
           <ProjectCard project={B07Project}/>
 
         </div>
