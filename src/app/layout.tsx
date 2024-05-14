@@ -30,6 +30,7 @@ export default function RootLayout({
       <head>
       <link rel="icon" href="/favicon.ico" sizes="any" />
       </head>
+
       <body className={montserrat.className}>
         <div className={styles.everything}>
 
@@ -41,7 +42,7 @@ export default function RootLayout({
           {children}
         </div>
         
-        </div>{/*this is the everything container */}
+        </div>
 
         </body>
     </html>
