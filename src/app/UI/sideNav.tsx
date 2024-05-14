@@ -13,9 +13,6 @@ export default function SideNav() {
          <Link href={"/courses"}>My Courses</Link> 
          </div>
          <div>
-         <Link href={"/resume"}>My Resume</Link>
-         </div> 
-         <div>
             <SocialLinks/>
          </div>
          
