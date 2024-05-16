@@ -1,62 +1,86 @@
 //import Image from "next/image";
+'use client'
+import { Button, Card, CardBody, CardFooter, CardHeader, Heading, Text, Box, Flex, Center, Grid, GridItem, Badge } from "@chakra-ui/react";
 import ProjectCard from "./UI/projectCard";
 import styles from "./page.module.css";
+import Projects from "./UI/projects";
+import Simple from "./UI/newNavBar";
 
 export default function Home() { 
-  // this will be a simple list of objects that contain my top 4 favorite projects that
-  //displays my skills as software developer
-  const B58project: { title: string, description: string, link: any } = {
-    title: "Assembly Game",
-    description: "This is a 2D platform game that was developed using MIPS assembly",
-    link: "https://github.com/MustafaTimbawala/CSCB58_FinalProject"
-  }; 
-  const B07Project:{title: string, description:string, link:any}= { 
-    title: "Android App", 
-    description: "This is an android app developed with other team members that employed in its production the Agile methodology, Scrum,...", 
-    link:"https://github.com/MustafaTimbawala/B07GR12",
-  } ; 
-
-
 
   return (
-    <div>
-      <div className={styles.start} >
-      <p className={styles.greeting}><b>Welcome.</b> I am</p>
-      <h1 className={styles.identification}>Mustafa Timbawala</h1> 
-      <p className={styles.introduction}>I am an aspiring software engineer. 
-      I am also a third year Computer Science student specializing in 
-      Software Engineering at the Universtity of Toronto Scarborough.</p>  
-      </div> 
-      <div className={styles.skills}>
-        <h3>These are my skills: </h3> 
 
-        <div className={styles.skillContainer}> 
+    <Box maxW='100%'>
+      <Box w={'100vw'}>
+        <Simple/>
+      </Box>
+      
+      <Box p='2vw' className={styles.start} >
+        <Text fontSize='large' className={styles.greeting}><b>Welcome.</b> I am</Text>
+        <Flex
+        justify='center'
+        align='center'
+        > 
+          <Text fontSize='3xl' className={styles.identification}>Mustafa Timbawala</Text>
+        </Flex>
+        <Box p='1vw'> 
+          <Text fontSize='lg' className={styles.introduction}>I am an aspiring software engineer. 
+          I am also a third year Computer Science student specializing in 
+          Software Engineering at the Universtity of Toronto Scarborough.</Text>
+        </Box>
           
-          <div className={styles.skillWord}>
-            <div><p> C </p> </div><p> Java </p> <p> Python </p> <p> Git </p> <p> JavaScript </p>
-          </div>
+      </Box> 
 
-          <div className={styles.skillWord}>
-            <p> HTML </p> <p> CSS </p> <p> SQL </p> <p> React </p> <p> Android Studio </p>
-          </div>
-                   
-        </div>
+      <Box className={styles.skills}>
+        <Grid 
+        templateRows='repeat(3, 1fr)'
+        templateColumns='repeat(5, 1fr)'
+        p={2}
+        gap={1}
+        maxW='90vw'
+        >
+          <GridItem colSpan={5} rowSpan={1} >
+            <Flex
+              height='100%'
+              align='center'
+              justify='center'
+            >
+              <Box> 
+                <Text  fontSize='2xl'> My Skills:</Text> 
+             </Box>
+            </Flex>
+          
+          </GridItem> 
+          <GridItem colSpan={1} rowSpan={1}><Badge colorScheme="orange">C</Badge></GridItem>
+          <GridItem colSpan={1} rowSpan={1}><Badge colorScheme="orange">Python</Badge></GridItem>
+          <GridItem colSpan={1} rowSpan={1}><Badge colorScheme="orange">Java</Badge></GridItem>
+          <GridItem colSpan={1} rowSpan={1}><Badge colorScheme="orange">JavaScript</Badge></GridItem> 
+          <GridItem colSpan={1} rowSpan={1}><Badge colorScheme="orange">SQL</Badge></GridItem>
+          <GridItem colSpan={1} rowSpan={1}><Badge colorScheme="orange">React</Badge></GridItem>
+          <GridItem colSpan={1} rowSpan={1}><Badge colorScheme="orange">HTML</Badge></GridItem>
+          <GridItem colSpan={1} rowSpan={1}><Badge colorScheme="orange">CSS</Badge></GridItem>
+          <GridItem colSpan={1} rowSpan={1}><Badge colorScheme="orange">Github</Badge></GridItem>
+        </Grid>
         
-      </div> 
-      <div className={styles.projectSec}> 
-        <div> 
-            <h3 className={styles.subtitle}>Here are some of my projects: </h3>  
-        </div>  
-        <div className={styles.projectBin}> 
-          <ProjectCard project={B58project} />
-          <ProjectCard project={B07Project}/>
+      </Box> 
+      
+      <Flex
+      align='center'
+      justify='center'
+      >
+        <Box className="resume" p='3vw'> 
+          <a href="/assets/MasterResume.pdf" download><Button colorScheme="yellow">Download My Resume</Button></a>
+        </Box>
+      </Flex>
 
-        </div>
-        
-      </div> 
+      <Flex 
+      align='center'
+      justify='center'
+      > 
+          <Projects/>
+      </Flex>
 
-
-    </div>
+    </Box>
  
     
   );

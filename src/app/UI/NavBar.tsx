@@ -10,9 +10,6 @@ export default function SideNav() {
         <Link href={"/"} >Home</Link> 
         </div>
          <div>
-         <Link href={"/courses"}>My Courses</Link> 
-         </div>
-         <div>
             <SocialLinks/>
          </div>
          

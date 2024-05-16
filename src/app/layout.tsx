@@ -1,10 +1,13 @@
+
 import type { Metadata } from "next";
 import type { Viewport } from "next";
 import { Inter, Montserrat } from "next/font/google";
 import "./globals.css";
-import SideNav from "@/app/UI/sideNav"
+import SideNav from "@/app/UI/NavBar"
 import styles from "@/app/page.module.css"
 import Link from "next/link";
+import { Providers } from "./providers";
+import Simple from "./UI/newNavBar";
 
 const inter = Inter({ subsets: ["latin"] });
 const montserrat = Montserrat({subsets: ['latin']})
@@ -32,17 +35,18 @@ export default function RootLayout({
       </head>
 
       <body className={montserrat.className}>
+        <Providers> 
         <div className={styles.everything}>
 
-        <div>
-        <SideNav/>
-        </div>
 
-        <div> 
-          {children}
+          <div> 
+            {children}
+          </div>
+
         </div>
-        
-        </div>
+          
+        </Providers>
+
 
         </body>
     </html>
