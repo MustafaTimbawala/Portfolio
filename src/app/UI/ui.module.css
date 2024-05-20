@@ -1,34 +1,39 @@
-.firstContainer{ 
+.navBar{ 
     display: flex; 
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
-    background-color:  #CB997E;
-    height: 110%;
+    background-color:  #ECC94B;
     margin: 0%; 
-    padding: 0%;
-    width: 100vw;
-    
-    
+    padding: 1%;
+    width: 100%;
+    box-sizing: border-box;
+    opacity: 100%;
 }
 
-.firstContainer a:link{ 
-    color:#FF9F1C ;
+.navBar a:link{ 
+    color:black ;
     text-decoration: none;
 } 
-
-.firstContainer a:visited{ 
-    color: #FFBF69;
-    text-decoration: none;
-} 
-
-.firstContainer a:hover{  
+ 
+.navBar a:hover{  
+    color: #FF9F1C; 
     text-decoration: underline;
 }
 
+.navBar a:visited{ 
+    color:black;
+} 
+
+.navBar.pageLinks{ 
+    box-sizing: border-box;
+    width: 50%;
+}
+
+
 
 @media screen and (max-width: 500px){
-    .firstContainer{ 
+    .navBar{ 
         display: flex; 
         flex-direction: column;
         justify-content: space-evenly;
@@ -38,8 +43,48 @@
         margin: 0%; 
         padding: 0%;
         width: 100vw;
+        box-sizing: border-box;
+        overflow: hidden;
+    
     }
   }
+
+.pageLinks{ 
+    flex: 2;
+    display: flex;
+    justify-content: space-evenly; 
+    align-items: center;
+}
+
+@media screen and (max-width: 500px){
+    .pageLinks{ 
+        display: flex; 
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        background-color:  #CB997E;
+        height: 100%;
+        margin: 0%; 
+        padding-bottom: 1%;
+        width: 100%;
+        box-sizing: border-box;
+        overflow: hidden;
+    
+    }
+  }
+
+
+.socialLinks{ 
+    flex: 2;
+    display: flex;
+    justify-content: space-evenly; 
+    align-items: center;
+}
+
+
+
+
+
 
 .projCard{ 
     color: #CB997E;
@@ -57,10 +102,3 @@
     border: none;
 } 
 
-.stack{ 
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between; 
-    align-items: center; 
-    width: 140%;
-}

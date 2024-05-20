@@ -8,15 +8,15 @@ import { CgMail } from "react-icons/cg";
 export default function SocialLinks() {
     // need to apply css stuff to make it look better 
     return( 
-        <div  className={styles.stack}>  
+        <div  className={styles.socialLinks}>  
         <a href="mailto:mm.timbawala@gmail.com" target="_blank" rel="noopener noreferrer">
-            <CgMail size={30} color="#FF9F1C" />
+            <CgMail size={30} color="black" />
         </a>
         <a href="https://www.linkedin.com/in/mustafa-timbawala" target="_blank" rel="noopener noreferrer">
-            <CiLinkedin size={30} color="#FF9F1C" />
+            <CiLinkedin size={30} color="black" />
         </a>
         <a href="https://github.com/MustafaTimbawala" target="_blank" rel="noopener noreferrer">
-            <FaGithub size={30} color="#FF9F1C" />
+            <FaGithub size={28} color="black" />
         </a>
         </div>
         
