@@ -4,12 +4,15 @@
   --font-mono: ui-monospace, Menlo, Monaco, "Cascadia Mono", "Segoe UI Mono",
     "Roboto Mono", "Oxygen Mono", "Ubuntu Monospace", "Source Code Pro",
     "Fira Mono", "Droid Sans Mono", "Courier New", monospace;
-   background-color:  #FFE8D6;
    
    
     
 
 }
+html {
+  scroll-behavior: smooth;
+}
+
 
 body{ 
   display: flex; 
@@ -17,8 +20,10 @@ body{
   align-items: center;
   justify-content:center ;
   margin: 0vw;
-  padding: 0%;
+  padding-bottom: 5%;
   width: 100%; 
+  box-sizing: border-box;
+  overflow-x: hidden;
 
 }
 

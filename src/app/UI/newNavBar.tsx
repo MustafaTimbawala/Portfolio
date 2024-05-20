@@ -18,9 +18,15 @@ import {
 } from '@chakra-ui/react';
 import { HamburgerIcon, CloseIcon } from '@chakra-ui/icons';
 
-const Links = ['Home', 'Resume','Projects' ];
+interface Links { 
+    id:any, 
+    title:string,
+    link:any,
+}
 
-const NavLink = ({ children }: { children: ReactNode }) => (
+
+
+const NavLink = ({ children }: any) => ( 
   <Link
     px={2}
     py={1}
@@ -29,8 +35,8 @@ const NavLink = ({ children }: { children: ReactNode }) => (
       textDecoration: 'none',
       bg: useColorModeValue('gray.200', 'gray.700'),
     }}
-    href={'#'}>
-    {children}
+    href={children.link}>
+    {children.title}
   </Link>
 ); 
 
@@ -38,6 +44,21 @@ const NavLink = ({ children }: { children: ReactNode }) => (
 
 export default function Simple() {
   const { isOpen, onOpen, onClose } = useDisclosure();
+  const home : Links = { 
+    id : 1,
+    title: "HOME", 
+    link: "#start",
+  }  
+  const resume : Links = { 
+    id : 2,
+    title: "RESUME", 
+    link: "#resume",
+  } 
+  const projects : Links = { 
+    id : 3,
+    title: "PROJECTS", 
+    link: "#projects",
+  } 
 
   return (
     <>
@@ -55,9 +76,9 @@ export default function Simple() {
               as={'nav'}
               spacing={4}
               display={{ base: 'none', md: 'flex' }}>
-              {Links.map((link) => (
-                <NavLink key={link}>{link}</NavLink>
-              ))}
+              <NavLink>{home}</NavLink> 
+              <NavLink>{resume}</NavLink> 
+              <NavLink>{projects}</NavLink>
             </HStack>
           </HStack>
           <Flex alignItems={'center'}>
@@ -71,7 +92,7 @@ export default function Simple() {
                 <Avatar
                   size={'sm'}
                   src={
-                    '/favicon.ico'
+                    '/favicon.ico'  
                   }
                 />
               </MenuButton>
@@ -80,7 +101,7 @@ export default function Simple() {
                 <MenuDivider />
                 <a href="https://github.com/MustafaTimbawala" target="_blank" rel="noopener noreferrer"><MenuItem>Github</MenuItem></a>
                 <MenuDivider /> 
-                <a href="mailto:mm.timbawala@gmail.com" target="_blank" rel="noopener noreferrer"><MenuItem>Gmail</MenuItem></a>
+                <a href="mailto:mm.timbawala@gmail.com" target="_blank" rel="noopener noreferrer"><MenuItem>Email</MenuItem></a>
               </MenuList>
             </Menu>
           </Flex>
@@ -89,9 +110,9 @@ export default function Simple() {
         {isOpen ? (
           <Box pb={4} display={{ md: 'none' }}>
             <Stack as={'nav'} spacing={4}>
-              {Links.map((link) => (
-                <NavLink key={link}>{link}</NavLink>
-              ))}
+                <NavLink>{home}</NavLink> 
+                <NavLink>{resume}</NavLink> 
+                <NavLink>{projects}</NavLink>
             </Stack>
           </Box>
         ) : null}

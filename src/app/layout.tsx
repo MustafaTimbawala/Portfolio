@@ -37,7 +37,9 @@ export default function RootLayout({
       <body className={montserrat.className}>
         <Providers> 
         <div className={styles.everything}>
-
+          <div>
+            <SideNav/>
+          </div>
 
           <div> 
             {children}

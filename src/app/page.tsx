@@ -10,26 +10,31 @@ export default function Home() {
 
   return (
 
-    <Box maxW='100%'>
-      <Box w={'100vw'}>
-        <Simple/>
-      </Box>
-      
-      <Box p='2vw' className={styles.start} >
-        <Text fontSize='large' className={styles.greeting}><b>Welcome.</b> I am</Text>
+    <Box maxW='100vw' w='100vw'  boxSizing="border-box" overflow={"hidden"}> 
         <Flex
         justify='center'
         align='center'
-        > 
-          <Text fontSize='3xl' className={styles.identification}>Mustafa Timbawala</Text>
-        </Flex>
-        <Box p='1vw'> 
-          <Text fontSize='lg' className={styles.introduction}>I am an aspiring software engineer. 
-          I am also a third year Computer Science student specializing in 
-          Software Engineering at the Universtity of Toronto Scarborough.</Text>
+        direction='column'
+        >
+
+        <Box p='2vw' className={"start"} >
+          <Text fontSize='large' className={styles.greeting}><b>Welcome.</b> I am</Text>
+        </Box>
+        <Box> 
+          <Text fontSize='3xl' className={styles.identification}>Mustafa Timbawala.</Text>
         </Box>
           
-      </Box> 
+         
+          <Box p='1vw'> 
+            <Text fontSize='lg' className={styles.introduction}> I am
+            a passionate third-year Computer Science student specializing in Software Engineering.
+             With a deep love for coding and technology, I thrive on the challenges and opportunities they present. 
+             As I continue my academic journey, I am eager to grow both personally and professionally, seeking out 
+             experiences that will enhance my skills as a software engineer. Welcome to my portfolio,
+             where you can explore my projects, accomplishments, and aspirations.</Text>
+          
+        </Box>
+      </Flex> 
 
       <Box className={styles.skills}>
         <Grid 
@@ -46,7 +51,7 @@ export default function Home() {
               justify='center'
             >
               <Box> 
-                <Text  fontSize='2xl'> My Skills:</Text> 
+                <Text  fontSize='2xl'fontWeight={"bold"} color={"black"}> My Skills:</Text> 
              </Box>
             </Flex>
           
@@ -68,7 +73,7 @@ export default function Home() {
       align='center'
       justify='center'
       >
-        <Box className="resume" p='3vw'> 
+        <Box  id="resume" p='3vw'> 
           <a href="/assets/MasterResume.pdf" download><Button colorScheme="yellow">Download My Resume</Button></a>
         </Box>
       </Flex>
@@ -76,6 +81,7 @@ export default function Home() {
       <Flex 
       align='center'
       justify='center'
+      className="projects"
       > 
           <Projects/>
       </Flex>

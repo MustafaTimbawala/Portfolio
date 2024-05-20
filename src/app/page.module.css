@@ -1,16 +1,7 @@
 
 
-.greeting { 
- color: #CB997E;
- 
-} 
-.identification{ 
-  color: #FF9F1C;
-}
 
-.subtitle{ 
-  color: #FF9F1C;
-}
+
 .start{ 
   display: flex;
   flex-direction: column;
@@ -20,7 +11,7 @@
 } 
 
 .introduction{ 
-  color: #CB997E;
+  
   width: 50vw;
 
 }
@@ -36,13 +27,11 @@
 
 
 .skills h3{ 
-  color:#FF9F1C ;
+  color: black;
   padding-right: 1cm;
 }
 
 .skills p{ 
-  color: #FF9F1C; 
-
   width: max-content;
 }
 .skillContainer{
@@ -56,7 +45,7 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: normal;
-  width: 115%;
+  width: 100%;
 }
 
 .projectSec{ 

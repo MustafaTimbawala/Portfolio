@@ -10,9 +10,27 @@ export default function Projects(){
     
     const B07Project: Project  = { 
         title: "Android App", 
-        description: "This is an android app developed with other team members that employed in its production the Agile methodology, Scrum,...", 
+        description: "This is an android app developed with other team members that employed in its production the Agile methodology, and design patterns to make code that was modular, reusable and efficient. ", 
         link:"https://github.com/MustafaTimbawala/B07GR12",
-      } ; 
+      } ;  
+
+    const B09Project: Project = { 
+        title: "System Monitoring Tool",
+        description: "This is a Linux System Monitoring tool that accesses Linux Systems Files to extract information about the system usage, such as CPU usage or ongoing processes, and prints the information to the terminal ",
+        link: "https://github.com/MustafaTimbawala/LinuxSystemMonitoring",
+    } 
+
+    const B58Project: Project ={ 
+        title: "Assembly Game", 
+        description: "This is a 2D platformer game that was written using MIPS assmebly, where the character dodges enemy attacks, traps and navigates to the top to escape winning the game.",
+        link:"https://github.com/MustafaTimbawala/CSCB58_FinalProject",
+    }
+
+    const Portfolio: Project ={ 
+        title: "MY Portfolio Website", 
+        description:" This is the code for this very portfolio so you can see the React, HTML, CSS, TypeScript, and Chakra UI that underlies this website." ,
+        link:"https://github.com/MustafaTimbawala/Portfolio"
+    }
 
     return(
         
@@ -47,7 +65,7 @@ export default function Projects(){
             </GridItem>  
             <GridItem colSpan={1} rowSpan={2}> 
                 <Box> 
-                    <CardFormat projectInfo={B07Project}  /> 
+                    <CardFormat projectInfo={B09Project}  /> 
                 </Box>
             </GridItem> 
             
@@ -57,13 +75,13 @@ export default function Projects(){
                 justify='end'
                 align='center'> 
                     <Box> 
-                        <CardFormat projectInfo={B07Project}  /> 
+                        <CardFormat projectInfo={B58Project}  /> 
                     </Box>
                 </Flex>
             </GridItem>
             <GridItem colSpan={1} rowSpan={2}> 
                 <Box> 
-                    <CardFormat projectInfo={B07Project}  />
+                    <CardFormat projectInfo={Portfolio}  />
                 </Box>
             </GridItem>
             </Grid>
