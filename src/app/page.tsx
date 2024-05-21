@@ -1,7 +1,6 @@
 //import Image from "next/image";
 'use client'
 import { Button, Card, CardBody, CardFooter, CardHeader, Heading, Text, Box, Flex, Center, Grid, GridItem, Badge } from "@chakra-ui/react";
-import ProjectCard from "./UI/projectCard";
 import styles from "./page.module.css";
 import Projects from "./UI/projects";
 import Simple from "./UI/newNavBar";
