@@ -1,5 +1,5 @@
 'use client' 
-import { Button, Card, CardBody, CardFooter, CardHeader, Heading, Text, Box, Grid, GridItem, Flex } from "@chakra-ui/react";
+import { Button, Card, CardBody, CardFooter, CardHeader, Heading, Text, Box, Grid, GridItem, Flex, SimpleGrid } from "@chakra-ui/react";
 export default function Projects(){  
 
     interface Project {
@@ -44,47 +44,36 @@ export default function Projects(){
                 </Box>  
             </Flex>
             
+        <Flex> 
 
-            <Grid
-            w='90vw'
-            templateRows='repeat(4, 1fr)'
-            templateColumns='repeat(2, 1fr)'
-            gap={1}
-            p={5}
-            > 
+        </Flex>
+           
+    <Flex 
+    direction={"column"} 
+    justify={"center"} 
+    align={"center"}
+    >  
+        <Box 
+        p={1}
+        > 
+            <SimpleGrid spacing={4} templateColumns='repeat(auto-fill, minmax(200px, 1fr))'>
+                <CardFormat projectInfo={B07Project}  /> 
+                <CardFormat projectInfo={B09Project}  /> 
+            </SimpleGrid> 
+        </Box>
+        
+       <Box
+       p={1}
+       > 
+        <SimpleGrid spacing={4} templateColumns='repeat(auto-fill, minmax(200px, 1fr))'> 
+            <CardFormat projectInfo={B58Project}  />  
+            <CardFormat projectInfo={Portfolio}  />
+            
+        </SimpleGrid>
 
-            <GridItem colSpan={1} rowSpan={2}> 
-            <Flex
-            justify='end'
-            align='center'> 
-                <Box> 
-                    <CardFormat projectInfo={B07Project}  /> 
-                </Box>
-            </Flex>
-                
-            </GridItem>  
-            <GridItem colSpan={1} rowSpan={2}> 
-                <Box> 
-                    <CardFormat projectInfo={B09Project}  /> 
-                </Box>
-            </GridItem> 
-            
-            
-            <GridItem colSpan={1} rowSpan={2}> 
-                <Flex
-                justify='end'
-                align='center'> 
-                    <Box> 
-                        <CardFormat projectInfo={B58Project}  /> 
-                    </Box>
-                </Flex>
-            </GridItem>
-            <GridItem colSpan={1} rowSpan={2}> 
-                <Box> 
-                    <CardFormat projectInfo={Portfolio}  />
-                </Box>
-            </GridItem>
-            </Grid>
+       </Box>
+  </Flex>         
+       
     
         
         
@@ -96,7 +85,7 @@ export default function Projects(){
 function CardFormat({projectInfo}: any){  
     const {title, description, link} = projectInfo || {} 
     return( 
-        <Card maxW='sm'>  
+        <Card maxW='lg'>  
           <CardHeader>
            <Heading size='xs' textTransform='uppercase'> {title}</Heading>
            </CardHeader> 
