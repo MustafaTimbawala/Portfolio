@@ -4,7 +4,7 @@ import { Button, Card, CardBody, CardFooter, CardHeader, Heading, Text, Box, Fle
 import styles from "./page.module.css";
 import Projects from "./UI/projects";
 import Simple from "./UI/newNavBar";
-import SocialLinks from "./UI/ContactLink";
+import SocialLinks from "./UI/contactLink";
 
 export default function Home() { 
 
