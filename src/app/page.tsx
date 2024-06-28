@@ -77,10 +77,10 @@ export default function Home() {
         </Box>
       </Flex>
 
-      <Flex 
+      <Flex
+      direction={"row"} 
       align='center'
       justify='center'
-      className="projects"
       > 
           <Projects/>
       </Flex>
