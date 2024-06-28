@@ -24,8 +24,14 @@ export default function Home() {
         </Box>
           
          
-          <Box p='1vw'> 
-            <Text fontSize='lg' className={styles.introduction}> I am
+          <Box p='1vw' w={"50vw"} 
+          sx={{
+            
+            '@media screen and (max-width: 500px)': {
+              width: '90vw', // Default width for screens 500px and above
+            },
+          }}> 
+            <Text fontSize='lg'  > I am
             a passionate third-year Computer Science student specializing in Software Engineering.
              With a deep love for coding and technology, I thrive on the challenges and opportunities they present. 
              As I continue my academic journey, I am eager to grow both personally and professionally, seeking out 
