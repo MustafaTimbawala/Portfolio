@@ -20,10 +20,6 @@ export default function SideNav() {
         
         </div>
       
-         <div >
-            <SocialLinks/>
-         </div>
-         
        
         </div>
         
