@@ -4,6 +4,7 @@ import { Button, Card, CardBody, CardFooter, CardHeader, Heading, Text, Box, Fle
 import styles from "./page.module.css";
 import Projects from "./UI/projects";
 import Simple from "./UI/newNavBar";
+import SocialLinks from "./UI/ContactLink";
 
 export default function Home() { 
 
@@ -84,13 +85,15 @@ export default function Home() {
       </Flex>
 
       <Flex
-      direction={"row"} 
+      direction={"column"} 
       align='center'
       justify='center'
       > 
-          <Projects/>
-      </Flex>
+          <Projects/> 
 
+          <SocialLinks/>
+      </Flex>
+        
     </Box>
  
     
