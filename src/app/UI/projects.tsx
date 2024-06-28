@@ -34,7 +34,9 @@ export default function Projects(){
 
     return(
         
-        <Box> 
+        <Box 
+        maxW={"90vw"}
+        > 
             <Flex
             align='center'
             justify='center'
