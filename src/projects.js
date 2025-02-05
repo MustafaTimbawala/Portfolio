@@ -1,5 +1,11 @@
 // Here is where I will have a dictionary of projects that I have worked on, so that it is to get the projects statically. 
-export const projects = [
+export const projects = [ 
+    {
+      name: "Quotis", 
+      tools: ["React Native", "Expo", "Node.js", "Express", "MongoDB", "AWS S3", "GitHub"], 
+      description:"I worked in a team of five to develop a mobile platform for service requests, similar to TaskRabbit and Instagram, allowing users to post jobs with multimedia and select providers based on reviews and preferences. I integrated AWS S3 for secure multimedia storage and used MongoDB for efficient data management. The app was built with React Native and TypeScript to ensure a responsive cross-platform experience.", 
+      githubLink: "https://github.com/UofT-UTSC-CS-sandbox/final-term-project-quotis",
+    },
     {
       name: "ShareSpace",
       tools: ["Python", "Flask", "Mongoose", "PostgreSQL", "GitHub"],
@@ -20,5 +26,5 @@ export const projects = [
       description:
         "Collaborated with a team to develop a mobile application using Java and Android Studio that allows users to manage their content management systems (CMS) from their mobile devices. The app is designed to be user-friendly and intuitive, with a focus on providing a seamless user experience.",
       githubLink: "https://github.com/MustafaTimbawala/B07GR12",
-    },
+    }, 
   ];

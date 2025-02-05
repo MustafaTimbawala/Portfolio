@@ -92,7 +92,7 @@ function App() {
       <div className="w-[85vw] h-px mt-[10vh] bg-highlight"></div>
     </div>
     {/* Section 3 Projects Page Page */}
-    <div className='h-screen w-full flex flex-col items-center justify-start px-[7.5vw]' id="Projects"> 
+    <div className='min-h-screen w-full flex flex-col items-center justify-start px-[7.5vw]' id="Projects"> 
          <div> 
             <p className="font-body text-5xl text-highlight font-medium py-[5vh]" >Projects</p> 
          </div> 
